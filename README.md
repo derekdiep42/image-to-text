@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+This is my image-to-text application built with React, TypeScript, and Material-UI. 
+
+This web application allows you to call an API with a drawn or imported image, and will tell you what text exists in the image.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
