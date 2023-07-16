@@ -14,7 +14,7 @@ function SideNav() {
   const navigate = useNavigate();
 
   function handleCloseNavMenu(page: string) {
-    navigate(`/${page.toLowerCase()}`);
+    navigate(`/image-to-text/${page.toLowerCase()}`);
   }
 
   return (
@@ -26,7 +26,7 @@ function SideNav() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/image-to-text"
             sx={{
               mr: 2,
               display: "flex",

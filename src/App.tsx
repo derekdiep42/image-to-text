@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 import SideNav from "./components/SideNav";
 import Recognition from "./components/Recognition/Recognition";
@@ -18,9 +18,16 @@ function App() {
       <BrowserRouter>
         <SideNav />
         <Routes>
-          <Route path="/recognition" element={<Recognition />}></Route>
-          <Route path="/records" element={<Records />}></Route>
-          <Route path="*" element={<HomePage />}></Route>
+          <Route path="/image-to-text" element={<HomePage />}></Route>
+          <Route
+            path="/image-to-text/recognition"
+            element={<Recognition />}
+          ></Route>
+          <Route path="/image-to-text/records" element={<Records />}></Route>
+          <Route
+            path="*"
+            element={<Navigate to="/image-to-text" replace={true} />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </Box>
